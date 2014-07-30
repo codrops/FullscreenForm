@@ -279,7 +279,7 @@ button.fs-continue,
 	font-size: 1.2em;
 }
 
-.fs-fields input[type="radio"] {
+.fs-fields .fs-radio-custom input[type="radio"] {
 	position: absolute;
 	display: block;
 	margin: 30px auto 20px;
@@ -290,7 +290,7 @@ button.fs-continue,
 	cursor: pointer;
 }
 
-.fs-fields > li .fs-radio-group span {
+.fs-fields > li .fs-radio-custom span {
 	float: left;
 	position: relative;
 	margin-right: 3%;
@@ -303,21 +303,21 @@ button.fs-continue,
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.fs-fields > li .fs-radio-group span label {
+.fs-fields > li .fs-radio-custom span label {
 	color: rgba(0,0,0,0.4);
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
-.fs-form-overview .fs-fields > li .fs-radio-group span {
+.fs-form-overview .fs-fields > li .fs-radio-custom span {
 	max-width: 140px;
 }
 
-.fs-form-overview .fs-fields > li .fs-radio-group span {
+.fs-form-overview .fs-fields > li .fs-radio-custom span {
 	font-size: 75%;
 }
 
-.fs-fields > li .fs-radio-group label {
+.fs-fields > li .fs-radio-custom label {
 	display: block;
 	padding-top: 100%;
 	width: 100%;
@@ -325,7 +325,7 @@ button.fs-continue,
 	cursor: pointer;
 }
 
-.fs-fields .fs-radio-group label::after {
+.fs-fields .fs-radio-custom label::after {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -342,29 +342,29 @@ button.fs-continue,
 	transform: translate(-50%,-50%);
 }
 
-.fs-fields .fs-radio-group label.radio-mobile::after {
+.fs-fields .fs-radio-custom label.radio-mobile::after {
 	background-image: url(../img/mobile.svg);
 }
 
-.fs-fields .fs-radio-group label.radio-social::after {
+.fs-fields .fs-radio-custom label.radio-social::after {
 	background-image: url(../img/social.svg);
 }
 
-.fs-fields .fs-radio-group label.radio-conversion::after {
+.fs-fields .fs-radio-custom label.radio-conversion::after {
 	background-image: url(../img/conversion.svg);
 }
 
-.fs-fields .fs-radio-group label:hover::after,
+.fs-fields .fs-radio-custom label:hover::after,
 .fs-fields input[type="radio"]:focus + label::after,
 .fs-fields input[type="radio"]:checked + label::after {
 	opacity: 1;
 }
 
-.fs-fields input[type="radio"]:checked + label {
+.fs-fields .fs-radio-custom input[type="radio"]:checked + label {
 	color: #fffed8;
 }
 
-.fs-form-overview .fs-fields input[type="radio"]:checked + label {
+.fs-form-overview .fs-fields .fs-radio-custom input[type="radio"]:checked + label {
 	color: rgba(0,0,0,0.8);
 }
 
