@@ -305,6 +305,12 @@
 						self.ctrlFldStatus.removeChild( self.ctrlFldStatusNew );
 						classie.remove( self.ctrlFldStatus, 'fs-show-' + self.navdir );
 					}
+
+					// Making focus only for direct input,textarea child thus will skip radio buttons.
+					var temp=document.querySelector('.fs-current > input,.fs-current > textarea');
+					if(temp!=null){
+						temp.focus();
+					}
 				}
 				self.isAnimating = false;
 			};
